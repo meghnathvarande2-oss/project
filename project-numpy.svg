@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <rect width="600" height="400" rx="16" fill="#4F0341"/>
+  <rect x="20" y="20" width="560" height="360" rx="12" fill="#38022E" stroke="#FF5841" stroke-opacity="0.3" stroke-width="2"/>
+  <g transform="translate(50, 60)">
+    <circle cx="20" cy="20" r="8" fill="#FF5841"/>
+    <circle cx="45" cy="20" r="8" fill="#FFB020"/>
+    <circle cx="70" cy="20" r="8" fill="#00D26A"/>
+    <text x="110" y="26" font-family="'JetBrains Mono', monospace" font-size="16" fill="#FFFFFF" font-weight="bold">NumPy Student Analyzer // Array Engine</text>
+    
+    <!-- Matrix Visualization -->
+    <g transform="translate(20, 60)">
+      <rect x="0" y="0" width="220" height="200" rx="8" fill="#20011B" stroke="#6B0B5A" stroke-width="1.5"/>
+      <text x="15" y="30" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FF5841">import numpy as np</text>
+      <text x="15" y="60" font-family="'JetBrains Mono', monospace" font-size="12" fill="#E5E7EB">grades = np.array([</text>
+      <text x="30" y="85" font-family="'JetBrains Mono', monospace" font-size="12" fill="#93C5FD">[88, 94, 76, 92],</text>
+      <text x="30" y="110" font-family="'JetBrains Mono', monospace" font-size="12" fill="#93C5FD">[65, 82, 90, 85],</text>
+      <text x="30" y="135" font-family="'JetBrains Mono', monospace" font-size="12" fill="#93C5FD">[95, 89, 78, 91]</text>
+      <text x="15" y="165" font-family="'JetBrains Mono', monospace" font-size="12" fill="#E5E7EB">])</text>
+    </g>
+    
+    <!-- Stats Chart -->
+    <g transform="translate(270, 60)">
+      <rect x="0" y="0" width="210" height="200" rx="8" fill="#20011B" stroke="#6B0B5A" stroke-width="1.5"/>
+      <text x="15" y="30" font-family="'JetBrains Mono', monospace" font-size="12" fill="#00D26A">&gt; mean: 85.5% (A+)</text>
+      <text x="15" y="55" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FFB020">&gt; std:  ±7.24</text>
+      <!-- Bars -->
+      <rect x="25" y="150" width="25" height="30" rx="4" fill="#6B0B5A"/>
+      <rect x="65" y="120" width="25" height="60" rx="4" fill="#FF5841"/>
+      <rect x="105" y="90" width="25" height="90" rx="4" fill="#FF5841"/>
+      <rect x="145" y="110" width="25" height="70" rx="4" fill="#6B0B5A"/>
+    </g>
+  </g>
+</svg>
