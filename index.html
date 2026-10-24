@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Meghnath Varande, AI & Machine Learning diploma student (MSBTE). Specializing in Python, NumPy, Data Analysis, and AI Automation.">
+  <meta name="keywords" content="Meghnath Varande, AI student, Machine Learning, Python, NumPy, Pandas, MSBTE, Portfolio, Internships">
+  <meta name="author" content="Meghnath Varande">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Meghnath Varande | AI & Machine Learning Student">
+  <meta property="og:description" content="Portfolio of Meghnath Varande, AI & ML Diploma Student. Passionate about Python, Data Science, and Machine Learning.">
+  <meta property="og:image" content="assets/img/favicon.svg">
+
+  <title>Meghnath Varande | AI &amp; ML Student Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Google Fonts & Boxicons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+<style>
+.nav__item--dropdown {
+  position: relative;
+}
+.nav__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  box-shadow: 0 12px 32px rgba(79, 3, 65, 0.12);
+  width: 290px;
+  padding: 0.75rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+}
+.nav__item--dropdown:hover .nav__dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.nav__dropdown-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.nav__dropdown-item:hover {
+  background: var(--bg-secondary);
+}
+.nav__dropdown-item i {
+  font-size: 1.2rem;
+  color: var(--accent-orange);
+  margin-top: 0.2rem;
+}
+.nav__dropdown-item strong {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--primary);
+}
+.nav__dropdown-item p {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+</style>
+
+</head>
+<body>
+
+    <!-- ==================== 2. MOTION NAVIGATION MENU (FLOATING NAVBAR) ==================== -->
+  <header class="header floating-pill">
+    <div class="container nav">
+      <a href="#home" class="nav__logo" data-tooltip="Meghnath Varande Home">
+        <span class="nav__logo-avatar" style="width: 2rem; height: 2rem; border-radius: 9999px; background: var(--primary); color: white; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 0.5rem;">M</span>
+        <span>Meghnath</span><span class="nav__logo-badge" style="background: var(--primary-soft); color: var(--primary); font-size: 0.72rem; padding: 0.2rem 0.5rem; border-radius: 9999px; font-weight: 600;">AI/ML</span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="#projects" class="nav__link">Projects <i class="bx bx-chevron-down" style="font-size: 0.9rem;"></i></a>
+            <div class="nav__dropdown-menu">
+              <a href="#projects" class="nav__dropdown-item">
+                <i class="bx bx-brain"></i>
+                <div>
+                  <strong>Student Performance Analyzer</strong>
+                  <p>NumPy Statistical Vectorization</p>
+                </div>
+              </a>
+              <a href="#projects" class="nav__dropdown-item">
+                <i class="bx bx-credit-card"></i>
+                <div>
+                  <strong>ATM Banking Simulation</strong>
+                  <p>Menu-Driven C State Logic</p>
+                </div>
+              </a>
+              <a href="#projects" class="nav__dropdown-item">
+                <i class="bx bxl-python"></i>
+                <div>
+                  <strong>Python Practice &amp; Lab</strong>
+                  <p>Clean Code &amp; Git History</p>
+                </div>
+              </a>
+              <a href="#projects" class="nav__dropdown-item">
+                <i class="bx bx-calculator"></i>
+                <div>
+                  <strong>Console Calculator</strong>
+                  <p>Defensive Arithmetic in C</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__actions">
+        <button class="btn btn-outline btn-sm open-resume-btn" aria-label="View Resume" data-tooltip="View Resume">
+          <i class="bx bx-file"></i> <span>Resume</span>
+        </button>
+        <a href="#projects" class="btn btn-primary btn-sm nav-cta-btn" data-tooltip="View Projects">
+          <i class="bx bx-sparkles"></i> <span>View Projects</span>
+        </a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="bx bx-menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+      <div class="container hero__container">
+        
+        <!-- Left Column: Hero Intro -->
+        <div class="hero__data reveal">
+          <div class="hero__badge">
+            <span class="pulse-dot"></span>
+            <span>Available for AI / ML Internships</span>
+          </div>
+          
+          <h1 class="hero__title">
+            Hi, I'm <br>
+            <span class="dia-text-reveal">Meghnath Varande</span>
+          </h1>
+
+          <div class="hero__role-wrapper" style="font-size: 1.25rem; font-family: var(--font-heading); font-weight: 600; margin: 0.8rem 0; color: var(--text-secondary);">
+            <span>Specializing in </span>
+            <span class="smart-animate-word" id="smart-animate-text">Building.</span>
+            <span> intelligent data solutions.</span>
+          </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Tech Avatar Visual -->
+        <div class="hero__visual reveal">
+          <div class="avatar-card">
+            <div class="avatar-frame">
+              <div class="avatar-glow"></div>
+              <div class="avatar-circle">
+                <span class="avatar-initials">MV</span>
+              </div>
+            </div>
+            <h3 class="avatar-name">Meghnath Varande</h3>
+            <p class="avatar-sub">AI &amp; Machine Learning</p>
+            <span class="avatar-college-tag">
+              <i class="bx bx-buildings"></i> Adarsh Inst. of Tech (MSBTE)
+            </span>
+          </div>
+
+          <!-- Floating Badges Around Avatar -->
+          <div class="floating-chip chip--1">
+            <i class="bx bxl-python chip-icon" style="color: #38bdf8;"></i>
+            <span>Python &amp; NumPy</span>
+          </div>
+          <div class="floating-chip chip--2">
+            <i class="bx bx-chip chip-icon" style="color: #10b981;"></i>
+            <span>Machine Learning</span>
+          </div>
+          <div class="floating-chip chip--3">
+            <i class="bx bx-data chip-icon" style="color: #a855f7;"></i>
+            <span>Data Analysis</span>
+          </div>
+          <div class="floating-chip chip--4">
+            <i class="bx bxl-git chip-icon" style="color: #f97316;"></i>
+            <span>Git &amp; GitHub</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== STATS / HIGHLIGHTS BAR ==================== -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid reveal">
+          
+          <div class="stat-card">
+            <div class="stat-icon"><i class="bx bx-trophy"></i></div>
+            <div>
+              <div class="stat-number">93%</div>
+              <div class="stat-label">SSC Board Merit</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon"><i class="bx bx-code-alt"></i></div>
+            <div>
+              <div class="stat-number">4+</div>
+              <div class="stat-label">Hands-on Projects</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon"><i class="bx bx-certification"></i></div>
+            <div>
+              <div class="stat-number">7+</div>
+              <div class="stat-label">Verified Certifications</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon"><i class="bx bx-calendar"></i></div>
+            <div>
+              <div class="stat-number">2028</div>
+              <div class="stat-label">Expected Diploma Batch</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="bx bx-user"></i> Profile</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Dedicated to building a strong foundation in programming, data, and intelligent systems.</p>
+        </div>
+
+        <div class="about__container">
+          <!-- Left: Narrative -->
+          <div class="about__content reveal">
+            <h3>Turning curiosity into real code &amp; data solutions</h3>
+            <p class="about__text">
+              I am currently in my 2nd year of the Diploma in Artificial Intelligence and Machine Learning at Adarsh Institute of Technology, Vita (affiliated with MSBTE). With an academic foundation marked by 93% in SSC, I bring discipline, dedication, and analytical curiosity to software development.
+            </p>
+            <p class="about__text">
+              Having grounded my fundamentals in core programming languages like C, C++, and Java, my current focus is centered on the Python data science ecosystem—leveraging NumPy for vectorized computations, exploring Pandas for data manipulation, and mastering Generative AI and prompt engineering concepts.
+            </p>
+
+            <div class="about__highlights">
+              <div class="highlight-item">
+                <i class="bx bx-check-shield"></i>
+                <div>
+                  <h4>Project-Driven</h4>
+                  <p>Consistently turning theoretical concepts into functional repositories.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="bx bx-git-branch"></i>
+                <div>
+                  <h4>Clean Git Habits</h4>
+                  <p>Documented commits, clear code architecture, and open-source mindset.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="bx bx-brain"></i>
+                <div>
+                  <h4>AI &amp; Automation</h4>
+                  <p>Passionate about automating workflows and exploring modern LLMs.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="bx bx-group"></i>
+                <div>
+                  <h4>Eager Collaborator</h4>
+                  <p>Seeking an internship to learn from senior engineers and add value.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Key Fact Cards -->
+          <div class="about__cards-wrapper reveal">
+            <div class="fact-card">
+              <div class="fact-card__icon"><i class="bx bx-map-pin"></i></div>
+              <div>
+                <div class="fact-card__title">Location</div>
+                <div class="fact-card__value">Patan, Maharashtra, India</div>
+              </div>
+            </div>
+
+            <div class="fact-card">
+              <div class="fact-card__icon"><i class="bx bx-book-bookmark"></i></div>
+              <div>
+                <div class="fact-card__title">Institution</div>
+                <div class="fact-card__value">Adarsh Institute of Tech, Vita (MSBTE)</div>
+              </div>
+            </div>
+
+            <div class="fact-card">
+              <div class="fact-card__icon"><i class="bx bx-code-curly"></i></div>
+              <div>
+                <div class="fact-card__title">Languages</div>
+                <div class="fact-card__value">Python, C, C++, Java</div>
+              </div>
+            </div>
+
+            <div class="fact-card">
+              <div class="fact-card__icon"><i class="bx bx-envelope"></i></div>
+              <div>
+                <div class="fact-card__title">Email Directly</div>
+                <div class="fact-card__value">meghnathvarande2@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- ==================== TECHNICAL SKILLS & LEVELS ==================== -->
+    <section class="section skills" id="skills" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal text-center">
+          <span class="section-badge" style="background: var(--primary-soft); color: var(--primary);"><i class="bx bx-wrench"></i> Verified Competencies</span>
+          <h2 class="section-title"><span class="dia-text-reveal">Skills &amp; Technologies</span></h2>
+          <p class="section-subtitle">Verified proficiencies and practical experience levels across programming, data science, AI, web, and developer tools. (No invented percentages)</p>
+        </div>
+
+        <div class="skills__grid reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+          
+          <!-- Programming -->
+          <div class="skill-category" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+            <div class="skill-category__header" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+              <div class="skill-category__icon" style="background: var(--primary-soft); color: var(--primary); width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;"><i class="bx bx-code-alt"></i></div>
+              <h3 class="skill-category__title" style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--primary);">Programming</h3>
+            </div>
+            <div class="skill-chips" style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <div class="skill-chip" data-tooltip="Beginner to Intermediate" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bxl-python" style="color: #38bdf8;"></i> Python</span>
+                <span class="skill-tag" style="background: var(--accent-orange); color: white; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Beginner to Intermediate</span>
+              </div>
+              <div class="skill-chip" data-tooltip="Intermediate" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bx-code" style="color: var(--primary);"></i> C</span>
+                <span class="skill-tag" style="background: var(--primary-soft); color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Intermediate</span>
+              </div>
+              <div class="skill-chip" data-tooltip="Intermediate" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bx-code-curly" style="color: var(--primary);"></i> C++</span>
+                <span class="skill-tag" style="background: var(--primary-soft); color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Intermediate</span>
+              </div>
+              <div class="skill-chip" data-tooltip="Intermediate" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bxl-java" style="color: #ea580c;"></i> Java</span>
+                <span class="skill-tag" style="background: var(--primary-soft); color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Intermediate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science -->
+          <div class="skill-category" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+            <div class="skill-category__header" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+              <div class="skill-category__icon" style="background: var(--accent-orange-soft); color: var(--accent-orange); width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;"><i class="bx bx-data"></i></div>
+              <h3 class="skill-category__title" style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--primary);">Data Science</h3>
+            </div>
+            <div class="skill-chips" style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <div class="skill-chip" data-tooltip="Intermediate" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bx-grid-alt" style="color: #0284c7;"></i> NumPy</span>
+                <span class="skill-tag" style="background: var(--primary-soft); color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Intermediate</span>
+              </div>
+              <div class="skill-chip" data-tooltip="Beginner" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bx-table" style="color: #6366f1;"></i> Pandas</span>
+                <span class="skill-tag" style="background: #FFFFFF; color: var(--text-muted); border: 1px solid var(--border-color); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Beginner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Machine Learning -->
+          <div class="skill-category" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+            <div class="skill-category__header" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+              <div class="skill-category__icon" style="background: var(--primary-soft); color: var(--primary); width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;"><i class="bx bx-brain"></i></div>
+              <h3 class="skill-category__title" style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--primary);">AI &amp; Machine Learning</h3>
+            </div>
+            <div class="skill-chips" style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <div class="skill-chip" data-tooltip="Beginner" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bx-chip" style="color: var(--primary);"></i> ML Fundamentals</span>
+                <span class="skill-tag" style="background: #FFFFFF; color: var(--text-muted); border: 1px solid var(--border-color); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Beginner</span>
+              </div>
+              <div class="skill-chip" data-tooltip="Beginner" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bx-bot" style="color: var(--accent-orange);"></i> GenAI Fundamentals</span>
+                <span class="skill-tag" style="background: #FFFFFF; color: var(--text-muted); border: 1px solid var(--border-color); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Beginner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+            <div class="skill-category__header" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+              <div class="skill-category__icon" style="background: var(--accent-orange-soft); color: var(--accent-orange); width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;"><i class="bx bx-globe"></i></div>
+              <h3 class="skill-category__title" style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--primary);">Web Development</h3>
+            </div>
+            <div class="skill-chips" style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <div class="skill-chip" data-tooltip="Intermediate" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bxl-html5" style="color: #f97316;"></i> HTML</span>
+                <span class="skill-tag" style="background: var(--primary-soft); color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Intermediate</span>
+              </div>
+              <div class="skill-chip" data-tooltip="Beginner" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bxl-css3" style="color: #3b82f6;"></i> CSS</span>
+                <span class="skill-tag" style="background: #FFFFFF; color: var(--text-muted); border: 1px solid var(--border-color); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Beginner</span>
+              </div>
+              <div class="skill-chip" data-tooltip="Beginner" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bxl-javascript" style="color: #eab308;"></i> JavaScript</span>
+                <span class="skill-tag" style="background: #FFFFFF; color: var(--text-muted); border: 1px solid var(--border-color); padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Beginner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Tools -->
+          <div class="skill-category" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+            <div class="skill-category__header" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.75rem;">
+              <div class="skill-category__icon" style="background: var(--primary-soft); color: var(--primary); width: 2.5rem; height: 2.5rem; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;"><i class="bx bx-git-branch"></i></div>
+              <h3 class="skill-category__title" style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--primary);">Developer Tools</h3>
+            </div>
+            <div class="skill-chips" style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <div class="skill-chip" data-tooltip="Daily Use" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bxl-git" style="color: #f97316;"></i> Git</span>
+                <span class="skill-tag" style="background: var(--primary); color: white; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Daily Use</span>
+              </div>
+              <div class="skill-chip" data-tooltip="Daily Use" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; border-radius: 0.75rem; background: var(--bg-secondary); border: 1px solid var(--border-color);">
+                <span style="font-weight: 600; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;"><i class="bx bxl-github" style="color: var(--primary);"></i> GitHub</span>
+                <span class="skill-tag" style="background: var(--primary); color: white; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-family: var(--font-mono); font-weight: 600;">Daily Use</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="bx bx-folder"></i> Portfolio Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real code repositories showcasing analytical logic, systems programming, and problem solving.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="projects__filter reveal">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Python</button>
+          <button class="filter-btn" data-filter="systems">C &amp; Systems</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects__grid reveal">
+          
+          <!-- Project 1: Student Performance Analyzer -->
+          <article class="project-card" data-category="ai">
+            <div class="project-card__banner banner--ai">
+              <span class="project-card__badge">Featured</span>
+              <div class="project-card__icon-wrap">
+                <i class="bx bx-bar-chart-alt-2"></i>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Student Performance Analyzer</h3>
+              <p class="project-card__subtitle">Data Processing with NumPy</p>
+              <p class="project-card__desc">
+                A Python program that structures student grades inside multi-dimensional NumPy arrays to execute statistical aggregations—computing totals, class averages, standard distributions, maximum and minimum marks, and automated grade boundaries.
+              </p>
+              <ul class="project-card__features">
+                <li><i class="bx bx-check-circle"></i> Vectorized NumPy array operations</li>
+                <li><i class="bx bx-check-circle"></i> Class averages, medians, and min/max detection</li>
+                <li><i class="bx bx-check-circle"></i> Automated letter grading algorithm</li>
+              </ul>
+              <div class="project-card__tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">NumPy</span>
+                <span class="project-tag">Data Analysis</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/meghnathvarande2-oss" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                  <i class="bx bxl-github"></i> View Repository
+                </a>
+                <a href="#playground" class="btn btn-outline btn-sm">
+                  <i class="bx bx-play-circle"></i> Try Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Python Practice Repository -->
+          <article class="project-card" data-category="ai">
+            <div class="project-card__banner banner--python">
+              <span class="project-card__badge">Algorithm Lab</span>
+              <div class="project-card__icon-wrap">
+                <i class="bx bxl-python"></i>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Python Practice &amp; Algorithms Repository</h3>
+              <p class="project-card__subtitle">Core Logic &amp; Version Control</p>
+              <p class="project-card__desc">
+                A comprehensive public repository tracking incremental problem solving in Python. Contains structured scripts demonstrating syntax mastery, control flow branching, functional decomposition, file handling, and algorithmic puzzles.
+              </p>
+              <ul class="project-card__features">
+                <li><i class="bx bx-check-circle"></i> Modular functions &amp; input sanitization</li>
+                <li><i class="bx bx-check-circle"></i> Strict Git commit history &amp; branch flow</li>
+                <li><i class="bx bx-check-circle"></i> Fundamental data structure exercises</li>
+              </ul>
+              <div class="project-card__tags">
+                <span class="project-tag">Python 3</span>
+                <span class="project-tag">Git</span>
+                <span class="project-tag">Data Structures</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/meghnathvarande2-oss" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                  <i class="bx bxl-github"></i> View Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: ATM Management System -->
+          <article class="project-card" data-category="systems">
+            <div class="project-card__banner banner--c">
+              <span class="project-card__badge">Systems Logic</span>
+              <div class="project-card__icon-wrap">
+                <i class="bx bx-credit-card"></i>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">ATM Management System</h3>
+              <p class="project-card__subtitle">Menu-Driven Banking Simulation in C</p>
+              <p class="project-card__desc">
+                A console-based banking application written in C implementing real-world transaction flows: secure PIN verification, account balance audits, deposit handling, and withdrawal validations with insufficient-fund protection.
+              </p>
+              <ul class="project-card__features">
+                <li><i class="bx bx-check-circle"></i> Defensive balance validation guards</li>
+                <li><i class="bx bx-check-circle"></i> State-based transaction processing</li>
+                <li><i class="bx bx-check-circle"></i> Clean switch-case CLI architecture</li>
+              </ul>
+              <div class="project-card__tags">
+                <span class="project-tag">C Language</span>
+                <span class="project-tag">State Logic</span>
+                <span class="project-tag">CLI</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/meghnathvarande2-oss" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                  <i class="bx bxl-github"></i> View Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Console Calculator -->
+          <article class="project-card" data-category="systems">
+            <div class="project-card__banner banner--calc">
+              <span class="project-card__badge">Robust CLI</span>
+              <div class="project-card__icon-wrap">
+                <i class="bx bx-calculator"></i>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Console Calculator Engine</h3>
+              <p class="project-card__subtitle">Defensive Arithmetic in C</p>
+              <p class="project-card__desc">
+                An arithmetic evaluation terminal utility featuring modular math operations (+, -, *, /, %). Designed with defensive programming techniques, including divide-by-zero traps, operator verification, and robust buffer clearing.
+              </p>
+              <ul class="project-card__features">
+                <li><i class="bx bx-check-circle"></i> Zero-division exception handling</li>
+                <li><i class="bx bx-check-circle"></i> Invalid input character sanitation</li>
+                <li><i class="bx bx-check-circle"></i> High-precision floating point math</li>
+              </ul>
+              <div class="project-card__tags">
+                <span class="project-tag">C Language</span>
+                <span class="project-tag">Defensive Code</span>
+                <span class="project-tag">Math</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/meghnathvarande2-oss" class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                  <i class="bx bxl-github"></i> View Repository
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ==================== INTERACTIVE PLAYGROUND WIDGET ==================== -->
+        <div class="playground-box reveal" id="playground">
+          <div class="playground-badge">
+            <i class="bx bx-code-block"></i> Live Interactive Demo
+          </div>
+          <h3 class="playground-title">Test My NumPy Logic: Student Performance Analyzer</h3>
+          <p class="playground-desc">
+            Test the core statistical logic of my Python/NumPy project right here. Enter student test marks (0-100) separated by commas, or load a sample dataset to see real-time calculation of totals, averages, min/max, and grade evaluations.
+          </p>
+
+          <div class="playground-controls">
+            <div class="playground-input-group">
+              <label for="marks-input" class="playground-input-label">Enter Marks (comma separated):</label>
+              <input type="text" id="marks-input" class="playground-input" placeholder="e.g. 92, 85, 78, 95, 88, 64, 82" value="92, 85, 78, 95, 88, 64, 82">
+              <button class="sample-marks-btn" id="sample-marks-btn">Reset to Sample Marks</button>
+            </div>
+            <button class="btn btn-primary" id="calc-btn">
+              <i class="bx bx-play"></i> Run NumPy Analysis
+            </button>
+          </div>
+
+          <div class="playground-results">
+            <div class="result-card">
+              <div class="result-card__label">Mean / Average</div>
+              <div class="result-card__val" id="res-mean">83.4%</div>
+            </div>
+            <div class="result-card">
+              <div class="result-card__label">Highest Score</div>
+              <div class="result-card__val" id="res-max">95</div>
+            </div>
+            <div class="result-card">
+              <div class="result-card__label">Lowest Score</div>
+              <div class="result-card__val" id="res-min">64</div>
+            </div>
+            <div class="result-card">
+              <div class="result-card__label">Overall Grade</div>
+              <div class="result-card__val" id="res-grade">Distinction (A)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION & CERTIFICATIONS ==================== -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="bx bx-award"></i> Qualifications</span>
+          <h2 class="section-title">Education &amp; Certifications</h2>
+          <p class="section-subtitle">Academic foundations and verified skill credentials in Artificial Intelligence and professional practices.</p>
+        </div>
+
+        <div class="education__container">
+          
+          <!-- Column 1: Academic Timeline -->
+          <div class="education__col reveal">
+            <h3 style="font-size: 1.4rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="bx bx-graduation" style="color: var(--primary);"></i> Academic Milestones
+            </h3>
+
+            <div class="timeline">
+              <!-- Item 1 -->
+              <div class="timeline__item">
+                <span class="timeline__dot"></span>
+                <span class="timeline__date">Aug 2025 – Apr 2028 (Expected)</span>
+                <h4 class="timeline__title">Diploma in Artificial Intelligence &amp; Machine Learning</h4>
+                <p class="timeline__institute">Adarsh Institute of Technology, Vita, Maharashtra (MSBTE)</p>
+                <p class="timeline__desc">
+                  Comprehensive 3-year curriculum focusing on AI/ML foundations, Python programming, data structures, applied mathematics, and machine learning algorithms.
+                </p>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="timeline__item">
+                <span class="timeline__dot"></span>
+                <span class="timeline__date">Passed Feb 2025</span>
+                <h4 class="timeline__title">Secondary School Certificate (SSC) — 93% Distinction</h4>
+                <p class="timeline__institute">Maharashtra State Board</p>
+                <p class="timeline__desc">
+                  Graduated with exceptional academic merit (93%), excelling in mathematics, science, and logical problem solving.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Certifications -->
+          <div class="education__col reveal">
+            <h3 style="font-size: 1.4rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;">
+              <i class="bx bx-certification" style="color: var(--primary);"></i> Verified Certifications
+            </h3>
+
+            <div class="certs__list">
+              
+              <div class="cert-card">
+                <div class="cert-card__left">
+                  <div class="cert-issuer-badge badge--ibm"><i class="bx bx-chip"></i></div>
+                  <div>
+                    <h4 class="cert-title">Foundation in Generative AI</h4>
+                    <p class="cert-issuer">IBM</p>
+                  </div>
+                </div>
+                <span class="cert-status"><i class="bx bx-check-circle"></i> Verified</span>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-card__left">
+                  <div class="cert-issuer-badge badge--ms"><i class="bx bxl-microsoft"></i></div>
+                  <div>
+                    <h4 class="cert-title">Write Effective Prompts</h4>
+                    <p class="cert-issuer">Microsoft</p>
+                  </div>
+                </div>
+                <span class="cert-status"><i class="bx bx-check-circle"></i> Verified</span>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-card__left">
+                  <div class="cert-issuer-badge badge--ms"><i class="bx bxl-microsoft"></i></div>
+                  <div>
+                    <h4 class="cert-title">Use AI for Everyday Tasks</h4>
+                    <p class="cert-issuer">Microsoft</p>
+                  </div>
+                </div>
+                <span class="cert-status"><i class="bx bx-check-circle"></i> Verified</span>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-card__left">
+                  <div class="cert-issuer-badge badge--ms"><i class="bx bxl-microsoft"></i></div>
+                  <div>
+                    <h4 class="cert-title">Microsoft 365 Copilot Chat (Basic)</h4>
+                    <p class="cert-issuer">Microsoft</p>
+                  </div>
+                </div>
+                <span class="cert-status"><i class="bx bx-check-circle"></i> Verified</span>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-card__left">
+                  <div class="cert-issuer-badge badge--coursera"><i class="bx bx-globe"></i></div>
+                  <div>
+                    <h4 class="cert-title">Yuva AI for All</h4>
+                    <p class="cert-issuer">Coursera</p>
+                  </div>
+                </div>
+                <span class="cert-status"><i class="bx bx-check-circle"></i> Verified</span>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-card__left">
+                  <div class="cert-issuer-badge badge--tcs"><i class="bx bx-briefcase-alt-2"></i></div>
+                  <div>
+                    <h4 class="cert-title">Communication &amp; Interview Skills</h4>
+                    <p class="cert-issuer">TCS iON</p>
+                  </div>
+                </div>
+                <span class="cert-status"><i class="bx bx-check-circle"></i> Verified</span>
+              </div>
+
+              <div class="cert-card">
+                <div class="cert-card__left">
+                  <div class="cert-issuer-badge badge--hp"><i class="bx bx-slideshow"></i></div>
+                  <div>
+                    <h4 class="cert-title">Effective Presentations</h4>
+                    <p class="cert-issuer">HP LIFE</p>
+                  </div>
+                </div>
+                <span class="cert-status"><i class="bx bx-check-circle"></i> Verified</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge"><i class="bx bx-conversation"></i> Reach Out</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in offering an internship, collaborating on a project, or discussing AI? Let's connect.</p>
+        </div>
+
+        <div class="contact__container">
+          
+          <!-- Left: Contact Details & Quick Links -->
+          <div class="contact-info-wrapper reveal">
+            <div class="contact-info-list">
+              
+              <div class="contact-info-card">
+                <div class="contact-info-icon"><i class="bx bx-envelope"></i></div>
+                <div>
+                  <div class="contact-info-label">Email Address</div>
+                  <div class="contact-info-val">meghnathvarande2@gmail.com</div>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-info-icon"><i class="bx bxl-linkedin"></i></div>
+                <div>
+                  <div class="contact-info-label">LinkedIn</div>
+                  <div class="contact-info-val">
+                    <a href="https://www.linkedin.com/in/meghnath-varande-10823b438" target="_blank" rel="noopener" style="color: var(--primary);">
+                      Connect on LinkedIn <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-info-icon"><i class="bx bxl-github"></i></div>
+                <div>
+                  <div class="contact-info-label">GitHub</div>
+                  <div class="contact-info-val">
+                    <a href="https://github.com/meghnathvarande2-oss" target="_blank" rel="noopener" style="color: var(--primary);">
+                      meghnathvarande2-oss <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-info-icon"><i class="bx bx-map"></i></div>
+                <div>
+                  <div class="contact-info-label">Current Location</div>
+                  <div class="contact-info-val">Patan, Maharashtra, India</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem;">
+              <h4 style="font-size: 1rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span class="pulse-dot"></span> Open to Internships
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6;">
+                I am actively seeking internship roles in AI/ML engineering, Python automation, and data analysis. Available for remote or regional opportunities in Maharashtra.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <form class="contact-form reveal" id="contact-form">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Send a Direct Message</h3>
+
+            <!-- Quick Topic Selectors -->
+            <label class="form-label">Choose Topic:</label>
+            <div class="topic-tags">
+              <button type="button" class="topic-tag-btn" data-topic="Internship Opportunity">Internship Opportunity</button>
+              <button type="button" class="topic-tag-btn" data-topic="Project Collaboration">Project Collaboration</button>
+              <button type="button" class="topic-tag-btn" data-topic="Mentorship &amp; Advice">Mentorship</button>
+              <button type="button" class="topic-tag-btn" data-topic="General Inquiry">General Inquiry</button>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="name@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. AI Internship Discussion" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="bx bx-paper-plane"></i> Send Email Message
+            </button>
+            <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.85rem;">
+              Opens your default email client with your pre-filled inquiry.
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== RESUME MODAL ==================== -->
+  <div class="modal-overlay" id="resume-modal" role="dialog" aria-modal="true" aria-label="Meghnath Varande Resume">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="close-resume-btn" aria-label="Close modal">
+        <i class="bx bx-x"></i>
+      </button>
+
+      <div class="resume-doc">
+        <!-- Resume Header -->
+        <div class="resume-header">
+          <h2>MEGHNATH VARANDE</h2>
+          <p>AI &amp; Machine Learning Diploma Student (MSBTE)</p>
+          <div class="resume-contact-bar">
+            <span><i class="bx bx-envelope"></i> meghnathvarande2@gmail.com</span>
+            <span><i class="bx bx-map-pin"></i> Patan, Maharashtra, India</span>
+            <span><i class="bx bxl-github"></i> github.com/meghnathvarande2-oss</span>
+            <span><i class="bx bxl-linkedin"></i> linkedin.com/in/meghnath-varande-10823b438</span>
+          </div>
+        </div>
+
+        <!-- Career Objective -->
+        <div class="resume-section">
+          <h3 class="resume-sec-title">Career Objective</h3>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: var(--text-secondary);">
+            Enthusiastic and disciplined 2nd-year AI &amp; ML diploma student (93% SSC merit) seeking an entry-level internship in AI, data analysis, or Python automation. Dedicated to writing clean, maintainable code, leveraging NumPy and Pandas, and rapidly learning within professional engineering teams.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-section">
+          <h3 class="resume-sec-title">Education</h3>
+          <div class="resume-item">
+            <div class="resume-item-head">
+              <span class="resume-item-title">Diploma in Artificial Intelligence &amp; Machine Learning</span>
+              <span class="resume-item-date">2025 – 2028 (Expected)</span>
+            </div>
+            <div class="resume-item-sub">Adarsh Institute of Technology, Vita, Maharashtra (MSBTE)</div>
+            <p class="resume-item-desc">Coursework: AI Fundamentals, Python Programming, C &amp; C++, Applied Mathematics, Machine Learning Foundations.</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-head">
+              <span class="resume-item-title">Secondary School Certificate (SSC) — 93%</span>
+              <span class="resume-item-date">Feb 2025</span>
+            </div>
+            <div class="resume-item-sub">Maharashtra State Board</div>
+            <p class="resume-item-desc">Academic distinction with highest grades across Mathematics and Science.</p>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="resume-section">
+          <h3 class="resume-sec-title">Technical Skills</h3>
+          <p style="font-size: 0.88rem; line-height: 1.7; color: var(--text-secondary);">
+            <strong>Programming Languages:</strong> Python, C, C++, Java<br>
+            <strong>Data &amp; AI:</strong> NumPy, Pandas (Basics), Generative AI Foundations, Prompt Engineering<br>
+            <strong>Tools &amp; Platforms:</strong> Git, GitHub, VS Code, Jupyter Notebooks, Command Line
+          </p>
+        </div>
+
+        <!-- Projects -->
+        <div class="resume-section">
+          <h3 class="resume-sec-title">Academic &amp; Personal Projects</h3>
+          <div class="resume-item">
+            <div class="resume-item-head">
+              <span class="resume-item-title">Student Performance Analyzer</span>
+              <span class="resume-item-date">Python, NumPy</span>
+            </div>
+            <p class="resume-item-desc">Developed a vectorized statistical analysis program in Python utilizing NumPy arrays to aggregate student marks, calculate mean averages, rank distributions, and assign grade brackets.</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-head">
+              <span class="resume-item-title">ATM Management Simulation</span>
+              <span class="resume-item-date">C Language</span>
+            </div>
+            <p class="resume-item-desc">Engineered a menu-driven banking utility handling balance validation, account PIN authentication, and deposit/withdrawal state checks.</p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="resume-section">
+          <h3 class="resume-sec-title">Certifications</h3>
+          <ul style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.7; padding-left: 1.25rem; list-style: disc;">
+            <li>IBM: Foundation in Generative AI</li>
+            <li>Microsoft: Write Effective Prompts &amp; AI Everyday Tasks</li>
+            <li>Microsoft 365 Copilot Chat (Basic)</li>
+            <li>Coursera / Yuva: AI for All</li>
+            <li>TCS iON: Communication Skills &amp; Interview Prep</li>
+            <li>HP LIFE: Effective Presentations</li>
+          </ul>
+        </div>
+
+        <!-- Modal Actions -->
+        <div class="modal-actions">
+          <button class="btn btn-outline btn-sm" id="print-resume-btn">
+            <i class="bx bx-printer"></i> Print / Save PDF
+          </button>
+          <a href="mailto:meghnathvarande2@gmail.com?subject=Internship%20Offer%20for%20Meghnath" class="btn btn-primary btn-sm">
+            <i class="bx bx-paper-plane"></i> Contact for Internship
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SCROLL TO TOP BUTTON ==================== -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top of page">
+    <svg class="scroll-top__circle" viewBox="0 0 46 46">
+      <circle cx="23" cy="23" r="20.7"></circle>
+    </svg>
+    <i class="bx bx-up-arrow-alt"></i>
+  </button>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <h3>Meghnath Varande</h3>
+          <p class="footer__tagline">AI &amp; Machine Learning Student &bull; Adarsh Institute of Tech (MSBTE)</p>
+        </div>
+
+        <div class="hero__social-links">
+          <a href="https://github.com/meghnathvarande2-oss" class="social-icon-btn" data-tooltip="GitHub" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/meghnath-varande-10823b438" class="social-icon-btn" data-tooltip="LinkedIn" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="mailto:meghnathvarande2@gmail.com" class="social-icon-btn" data-tooltip="Email Meghnath" aria-label="Email">
+            <i class="bx bx-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> Meghnath Varande. Built for high performance &amp; continuous learning.</p>
+        <p>Crafted with <i class="bx bxs-heart" style="color: #ef4444;"></i> for AI &amp; Software Development</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
